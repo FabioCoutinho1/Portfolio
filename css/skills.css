@@ -1,0 +1,105 @@
+#skills {
+  background-color: var(--highlight-color);
+  display: flex;
+  justify-content: center;
+  padding: 90px 40px 20px 40px;
+}
+
+.container__skills {
+  background-color: var(--bottom);
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.container__skills .more__skills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  border-right: 2px solid var(--highlight-color);
+}
+
+.more__skills h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--main-text);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.list__more__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.list__more__skills ul h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--main-text);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.list__more__skills ul li {
+  font-size: 1rem;
+  color: #ccc;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+
+.icons__skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+}
+
+.icons__skills h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--main-text);
+}
+
+.icons__skills .list__skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 125px 125px 125px;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.icons__skills .list__skills .item__skill img {
+  border-radius: 50%;
+}
+
+.icons__skills .list__skills .item__skill {
+  padding: 6px;
+  background-color: var(--highlight-color);
+  border-radius: 20px;
+  height: 125px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.icons__skills .list__skills .item__skill:hover {
+  border: 2px solid #fff;
+}

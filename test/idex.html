@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #212121;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card__container {
+      position: relative;
+      overflow: hidden;
+      max-width: 1050px;
+    }
+
+    .cards__list {
+      display: flex;
+      gap: 10px;
+      transition: 0.5s ease;
+    }
+
+    .card {
+      flex: 0 0 calc(1028px / 3);
+      height: 450px;
+      padding: 10px;
+      list-style: none;
+      background-color: #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .arrow__prev:hover {
+      transform: scale(1.2) rotate(90deg);
+    }
+
+    .arrow__next:hover {
+      transform: scale(1.2) rotate(-90deg);
+    }
+
+    .arrow__prev {
+      left: 0;
+      transform: rotate(90deg);
+    }
+
+    .arrow__next {
+      right: 0;
+      transform: rotate(-90deg);
+    }
+  </style>
+  <body>
+    <div class="card__container">
+      <button class="arrow arrow__prev">v</button>
+      <ul class="cards__list">
+        <li class="card">1</li>
+        <li class="card">2</li>
+        <li class="card">3</li>
+        <li class="card">4</li>
+        <li class="card">5</li>
+        <li class="card">6</li>
+      </ul>
+      <button class="arrow arrow__next">v</button>
+    </div>
+  </body>
+  <script>
+    const track = document.querySelector(".cards__list");
+    const prevBnt = document.querySelector(".arrow__prev");
+    const nextBnt = document.querySelector(".arrow__next");
+
+    let currentIndex = 0;
+
+    const updateTrackCards = () => {
+      const offset = -(currentIndex * (track.clientWidth + 8));
+      track.style.transform = `translateX(${offset}px)`;
+    };
+
+    prevBnt.addEventListener("click", () => {
+      if (currentIndex > 0) currentIndex--;
+      updateTrackCards();
+    });
+
+    nextBnt.addEventListener("click", () => {
+      if (currentIndex < 1) currentIndex++;
+      updateTrackCards();
+    });
+  </script>
+</html>

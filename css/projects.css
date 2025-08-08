@@ -1,0 +1,152 @@
+#projects {
+  background-color: var(--bottom);
+  padding: 90px 40px 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#projects > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: var(--main-text);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.container__projects {
+  position: relative;
+  overflow: hidden;
+  max-width: 990px;
+}
+
+.cards__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(960px / 3);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 530px;
+}
+
+.icons__redirect {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card__item:hover .icons__redirect {
+  opacity: 1;
+}
+
+.icons__redirect i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card__item:nth-child(1) {
+  margin-left: 5px;
+}
+
+.card__item img {
+  border-radius: 20px 20px 0 0;
+  object-fit: contain;
+  width: 320px;
+}
+
+.card__item .card__infos {
+  background-color: var(--highlight-color);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  height: 80%;
+  bottom: 0;
+  transition: transform 0.5s ease, border-radius 0.5s ease;
+  transform: translateY(210px);
+}
+
+.card__infos h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--bottom);
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  transition: margin-top 0.6s ease;
+}
+
+.card__infos p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--bottom);
+
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 20px;
+  transition: opacity 0.3s ease;
+}
+.card__item:hover .card__infos {
+  transform: translateY(0px);
+  border-radius: 20px 20px 0 0;
+}
+
+.card__item:hover h2 {
+  margin-top: 20px;
+}
+
+.card__item:hover p {
+  opacity: 1;
+}
+
+.buttons {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.5s;
+  pointer-events: all;
+}
+
+.buttons button:hover {
+  transform: scale(1.5);
+}
+
+.buttons button:active {
+  background-color: #7070703a;
+}
+
+.buttons i {
+  color: var(--highlight-color);
+  font-size: 3rem;
+}

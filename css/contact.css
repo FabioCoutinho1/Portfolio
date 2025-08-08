@@ -1,0 +1,186 @@
+#contact {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 40px 20px 40px;
+}
+
+.container__contact {
+  height: 100%;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container__contact > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.container__contact .contacts__box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container__contact .social__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 50%;
+}
+
+.social__contact .container__social {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.social__contact h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.social__contact .github {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
+
+.github i {
+  font-size: 2rem;
+}
+
+.social__contact .linkedin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.linkedin i {
+  color: #0077b5;
+  font-size: 2em;
+}
+
+.github,
+.linkedin {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.github h2,
+.linkedin h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.github:hover,
+.linkedin:hover {
+  transform: scale(1.1);
+}
+
+.contacts__box .send__message {
+  border: 1px solid #ffffff4b;
+  border-radius: 20px;
+  box-shadow: inset 6px 3px 20px 9px #ffffff4b,
+    inset -6px -3px 20px 9px #ffffff4b;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts__box .send__message h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.contacts__box .send__message .email__name {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.contacts__box .send__message .email__name input {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#call-me {
+  display: flex;
+  gap: 40px;
+  max-width: 596px;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 8px;
+
+  max-height: 400px;
+  font-family: "Roboto", sans-serif;
+}
+
+#call-me button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+
+#call-me button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#call-me button:active {
+  transform: scale(0.95);
+}
+
+footer {
+  background-color: #ccc;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+}
+
+footer h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
