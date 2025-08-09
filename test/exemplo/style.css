@@ -36,44 +36,6 @@ body {
   justify-content: center;
 }
 
-.ball__move {
-  height: 200px;
-  width: 200px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-
-  background-color: #fff;
-}
-
-.ball1 {
-  transform: scale(1.5);
-  position: absolute;
-  filter: blur(20px);
-  z-index: 0;
-  transition: all 5s;
-
-  animation: ball1move 3s infinite alternate linear;
-}
-
-@keyframes ball1move {
-  to {
-    transform: translateY(0);
-    transform: scale(1.5);
-  }
-  from {
-    filter: blur(90px);
-    transform: scale(1);
-  }
-}
-
-.ball2 {
-  position: absolute;
-  z-index: 1;
-  filter: blur(35px);
-  transform: translate(100px, 100px);
-  background-color: #acacac;
-}
-
 .xl {
   width: 3px;
   height: 100%;
@@ -112,12 +74,14 @@ body {
   border-radius: 50%;
   background-color: #fff;
   filter: blur(4px);
-  box-shadow: 0px 0px 40px 5px #fff;
+  box-shadow: 0px 0px 30px 20px #ffffff7c;
   position: absolute;
   right: 4.5%;
   top: 4.2%;
-  animation: ballmove 10s infinite linear;
+  animation: ballmove 20s infinite linear;
 }
+
+
 
 @keyframes ballmove {
   0%,
@@ -129,6 +93,7 @@ body {
   25% {
     right: calc(100% - 5.7%);
     top: 4.2%;
+
   }
 
   50% {

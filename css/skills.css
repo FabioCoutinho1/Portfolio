@@ -2,17 +2,17 @@
   background-color: var(--highlight-color);
   display: flex;
   justify-content: center;
-  padding: 90px 40px 20px 40px;
+  padding: 6rem 3rem 1.3rem 3rem;
 }
 
 .container__skills {
   background-color: var(--bottom);
   width: 100%;
-  max-width: 1280px;
-  padding: 20px;
+  max-width: 80rem;
+  padding: 1.3rem;
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 1.3rem;
 }
 
 .container__skills .more__skills {
@@ -21,8 +21,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  border-right: 2px solid var(--highlight-color);
+  gap: 3.75rem;
+  border-right: 0.13rem solid var(--highlight-color);
 }
 
 .more__skills h2 {
@@ -35,7 +35,7 @@
 .list__more__skills {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: space-between;
 }
 
@@ -45,14 +45,14 @@
   font-size: 1.5rem;
   color: var(--main-text);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .list__more__skills ul li {
   font-size: 1rem;
   color: #ccc;
   color: var(--main-text);
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 
 .icons__skills {
@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 3rem;
   width: 50%;
 }
 
@@ -74,9 +74,9 @@
 .icons__skills .list__skills {
   list-style: none;
   display: grid;
-  grid-template-columns: 125px 125px 125px;
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: 7.813rem 7.813rem 7.813rem;
+  column-gap: 1.3rem;
+  row-gap: 1.3rem;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -88,18 +88,18 @@
 }
 
 .icons__skills .list__skills .item__skill {
-  padding: 6px;
+  padding: 0.4rem;
   background-color: var(--highlight-color);
-  border-radius: 20px;
-  height: 125px;
-  width: 125px;
+  border-radius: 1.3rem;
+  height: 7.813rem;
+  width: 7.813rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 1s ease-in-out;
-  border: 2px solid transparent;
+  border: 0.13rem solid transparent;
 }
 
 .icons__skills .list__skills .item__skill:hover {
-  border: 2px solid #fff;
+  border: 0.13rem solid #fff;
 }

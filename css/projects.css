@@ -1,6 +1,6 @@
 #projects {
   background-color: var(--bottom);
-  padding: 90px 40px 20px 40px;
+  padding: 6rem 3rem 1.3rem 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,39 +14,39 @@
   color: var(--main-text);
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
 
 .container__projects {
   position: relative;
   overflow: hidden;
-  max-width: 990px;
+  max-width: 61.875rem;
 }
 
 .cards__list {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .card__item {
   display: flex;
   flex-direction: column;
-  flex: 0 0 calc(960px / 3);
-  border-radius: 20px;
+  flex: 0 0 calc(60rem / 3);
+  border-radius: 1.3rem;
   position: relative;
   overflow: hidden;
-  height: 530px;
+  height: 33.125rem;
 }
 
 .icons__redirect {
   position: absolute;
-  top: 10px;
+  top: 0.6rem;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 0 0.6rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -61,13 +61,13 @@
 }
 
 .card__item:nth-child(1) {
-  margin-left: 5px;
+  margin-left: 0.3rem;
 }
 
 .card__item img {
-  border-radius: 20px 20px 0 0;
+  border-radius: 1.3rem 1.3rem 0 0;
   object-fit: contain;
-  width: 320px;
+  width: 20rem;
 }
 
 .card__item .card__infos {
@@ -75,12 +75,12 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 10px;
+  gap: 0.4rem;
+  padding: 0.6rem;
   height: 80%;
   bottom: 0;
   transition: transform 0.5s ease, border-radius 0.5s ease;
-  transform: translateY(210px);
+  transform: translateY(13.125rem);
 }
 
 .card__infos h2 {
@@ -89,8 +89,8 @@
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 3rem;
+  margin-bottom: 1.6rem;
   transition: margin-top 0.6s ease;
 }
 
@@ -101,16 +101,16 @@
 
   opacity: 0;
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 1.3rem;
   transition: opacity 0.3s ease;
 }
 .card__item:hover .card__infos {
-  transform: translateY(0px);
-  border-radius: 20px 20px 0 0;
+  transform: translateY(0rem);
+  border-radius: 1.3rem 1.3rem 0 0;
 }
 
 .card__item:hover h2 {
-  margin-top: 20px;
+  margin-top: 1.3rem;
 }
 
 .card__item:hover p {
@@ -121,7 +121,7 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  max-width: 1280px;
+  max-width: 80rem;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -131,8 +131,8 @@
 .buttons button {
   background-color: transparent;
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
   transition: 0.5s;
   pointer-events: all;

@@ -3,17 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 40px 20px 40px;
+  padding: 6rem 3rem 1.3rem 3rem;
 }
 
 .container__contact {
   height: 100%;
   width: 100%;
-  max-width: 1280px;
+  max-width: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.3rem;
 }
 
 .container__contact > h2 {
@@ -35,14 +35,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 3rem;
   width: 50%;
 }
 
 .social__contact .container__social {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 3rem;
 }
 
 .social__contact h3 {
@@ -58,7 +58,8 @@
   display: flex;
   align-items: center;
   color: #fff;
-  gap: 10px;
+  gap: 0.6rem
+  ;
 }
 
 .github i {
@@ -68,7 +69,8 @@
 .social__contact .linkedin {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.6rem
+  ;
   color: #fff;
 }
 
@@ -95,17 +97,17 @@
 }
 
 .contacts__box .send__message {
-  border: 1px solid #ffffff4b;
-  border-radius: 20px;
-  box-shadow: inset 6px 3px 20px 9px #ffffff4b,
-    inset -6px -3px 20px 9px #ffffff4b;
+  border: 0.06rem solid #ffffff4b;
+  border-radius: 1.3rem;
+  box-shadow: inset 0.4rem 0.19rem 1.3rem 0.6rem #ffffff4b,
+    inset -0.4rem -0.19rem 1.3rem 0.6rem #ffffff4b;
   width: 50%;
-  padding: 20px;
+  padding: 1.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 3rem;
 }
 
 .contacts__box .send__message h2 {
@@ -118,21 +120,22 @@
 .contacts__box .send__message .email__name {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 0.6rem
+  ;
 }
 
 .contacts__box .send__message .email__name input {
   font-family: "Roboto", sans-serif;
   border: none;
-  padding: 16px;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
 #call-me {
   display: flex;
-  gap: 40px;
-  max-width: 596px;
+  gap: 3rem;
+  max-width: 37.25rem;
   flex-direction: column;
   width: 100%;
 }
@@ -141,31 +144,33 @@ textarea {
   width: 100%;
   resize: vertical;
   overflow: auto;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 0.6rem
+  ;
+  border-radius: 0.5rem;
 
-  max-height: 400px;
+  max-height: 25rem;
   font-family: "Roboto", sans-serif;
 }
 
 #call-me button {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  padding: 10px;
+  padding: 0.6rem
+  ;
   background-color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-size: 1em;
   font-weight: bolder;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 0.06rem solid transparent;
   transition: 0.5s;
 }
 
 #call-me button:hover {
   background-color: #000;
   color: #fff;
-  border: 1px solid #fff;
+  border: 0.06rem solid #fff;
 }
 
 #call-me button:active {
@@ -177,7 +182,8 @@ footer {
   text-align: center;
   position: relative;
   bottom: 0;
-  padding: 10px;
+  padding: 0.6rem
+  ;
 }
 
 footer h3 {
