@@ -58,8 +58,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  gap: 0.6rem
-  ;
+  gap: 0.6rem;
 }
 
 .github i {
@@ -69,8 +68,7 @@
 .social__contact .linkedin {
   display: flex;
   align-items: center;
-  gap: 0.6rem
-  ;
+  gap: 0.6rem;
   color: #fff;
 }
 
@@ -120,8 +118,7 @@
 .contacts__box .send__message .email__name {
   width: 100%;
   display: flex;
-  gap: 0.6rem
-  ;
+  gap: 0.6rem;
 }
 
 .contacts__box .send__message .email__name input {
@@ -144,8 +141,7 @@ textarea {
   width: 100%;
   resize: vertical;
   overflow: auto;
-  padding: 0.6rem
-  ;
+  padding: 0.6rem;
   border-radius: 0.5rem;
 
   max-height: 25rem;
@@ -155,8 +151,7 @@ textarea {
 #call-me button {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  padding: 0.6rem
-  ;
+  padding: 0.6rem;
   background-color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -182,8 +177,7 @@ footer {
   text-align: center;
   position: relative;
   bottom: 0;
-  padding: 0.6rem
-  ;
+  padding: 0.6rem;
 }
 
 footer h3 {

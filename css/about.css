@@ -44,7 +44,7 @@
   color: var(--main-text);
   line-height: 1.6rem;
   text-indent: 3rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 .provision {
   position: relative;
