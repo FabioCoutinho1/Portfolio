@@ -7,7 +7,7 @@
 
 .container__skills {
   background-color: var(--bottom);
-  width: 100%;
+  width: 100%; 
   max-width: 80rem;
   padding: 1.3rem;
   display: flex;
@@ -21,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   gap: 3.75rem;
   border-right: 0.13rem solid var(--highlight-color);
 }

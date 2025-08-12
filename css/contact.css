@@ -7,13 +7,13 @@
 }
 
 .container__contact {
-  height: 100%;
   width: 100%;
   max-width: 80rem;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.3rem;
+  gap: 3rem;
 }
 
 .container__contact > h2 {

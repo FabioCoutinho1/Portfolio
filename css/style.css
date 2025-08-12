@@ -75,6 +75,6 @@ header div nav ul li a:hover {
 #projects,
 #skills,
 #contact {
-  height: 100dvh;
+  min-height: 100dvh;
   padding-top: 6rem;
 }
