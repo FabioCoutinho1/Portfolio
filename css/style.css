@@ -13,6 +13,7 @@
   --main-text: #1a1a1a;
   --highlight-color: #4f46e5;
   --hovers: #6366f1;
+  --inset-shadow: #0000003e;
 }
 
 header {
@@ -25,10 +26,11 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: #000;
+  background-color: var(--bottom);
+  box-shadow: 0 0 12px var(--inset-shadow);
 }
 
-header div {
+header .desktop__nav {
   height: 100%;
   width: 100%;
   padding: 0 20px;
@@ -38,43 +40,101 @@ header div {
   justify-content: space-between;
 }
 
-header div h1 a {
+header .desktop__nav h1 a {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   text-decoration: none;
-  color: #fff;
+  color: var(--highlight-color);
   font-weight: bold;
   font-size: 0.8em;
 }
 
-header div nav ul {
+header .desktop__nav ul {
   display: flex;
   gap: 20px;
 }
 
-header div nav ul li {
+header .desktop__nav ul li {
   list-style: none;
 }
 
-header div nav ul li a {
+header .desktop__nav ul li a {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: var(--main-text);
   padding: 12px;
   border-radius: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
-header div nav ul li a:hover {
-  color: #000;
-  background-color: #fff;
+.contact__header a {
+  background-color: var(--highlight-color);
+  color: var(--bottom);
+  font-weight: bold;
 }
 
-#about,
+.contact__header a:hover {
+  background-color: var(--hovers);
+  color: var(--bottom);
+  box-shadow: 0 0 20px 6px var(--highlight-color);
+}
+
+header .desktop__nav ul li a:hover {
+  background-color: var(--hovers);
+  color: var(--bottom);
+}
+
+header .mobile__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+header .mobile__nav h1 a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--bottom);
+  background-color: var(--highlight-color);
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 0.4rem;
+  width: 3rem; 
+  aspect-ratio: 1 / 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__menu {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--highlight-color);
+}
+
+.mobile__list {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: var(--bottom);
+  box-shadow: 0 0 12px var(--inset-shadow);
+  flex-direction: column;
+  align-items: center;
+}
+
+#home,
 #projects,
 #skills,
 #contact {
   min-height: 100dvh;
-  padding-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  header .desktop__nav {
+    display: none;
+  }
 }

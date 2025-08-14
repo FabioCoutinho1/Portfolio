@@ -7,7 +7,7 @@
 
 .container__skills {
   background-color: var(--bottom);
-  width: 100%; 
+  width: 100%;
   max-width: 80rem;
   padding: 1.3rem;
   display: flex;
@@ -75,7 +75,7 @@
 .icons__skills .list__skills {
   list-style: none;
   display: grid;
-  grid-template-columns: 7.813rem 7.813rem 7.813rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 1.3rem;
   row-gap: 1.3rem;
   align-items: center;
@@ -86,14 +86,14 @@
 
 .icons__skills .list__skills .item__skill img {
   border-radius: 50%;
+  padding: .5rem;
 }
 
 .icons__skills .list__skills .item__skill {
   padding: 0.4rem;
   background-color: var(--highlight-color);
   border-radius: 1.3rem;
-  height: 7.813rem;
-  width: 7.813rem;
+  aspect-ratio: 2/2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,4 +103,38 @@
 
 .icons__skills .list__skills .item__skill:hover {
   border: 0.13rem solid #fff;
+}
+
+@media (max-width: 1200px) {
+  #skills {
+    background-color: var(--bottom);
+  }
+  .container__skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__skills .more__skills {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 2rem;
+  }
+
+  .icons__skills {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  #skills {
+    padding: 6rem 1.5rem 1.3rem 1.5rem;
+  }
+
+  .container__skills h2{
+    font-size: 1.5rem;
+  }
+
+  .list__more__skills ul h3{
+    font-size: 1.2 rem;
+  }
 }

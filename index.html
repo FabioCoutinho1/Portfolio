@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -18,22 +18,33 @@
   </head>
   <body>
     <header>
-      <div>
+      <nav class="desktop__nav">
         <h1><a href="#">Fabio Coutinho</a></h1>
-        <nav>
-          <ul>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li class="contact__header"><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <nav class="mobile__nav">
+        <h1><a href="#">F</a></h1>
+        <div class="mobile__menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="mobile__list">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li class="contact__header"><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section id="about">
-        <div class="container__about">
+      <section id="home">
+        <div class="container__home">
           <div class="container__left">
             <h2>
               Ola! sou Fabio Coutinho 🖖 <br />
@@ -43,12 +54,20 @@
               Criando interfaces bonitas e interatividades impressionantes 🚀
             </p>
 
-            <nav class="nav__about">
+            <nav class="nav__home">
               <ul>
-                <li class="contact__about"><a href="#contact">Contatos</a></li>
-                <li class="projects__about">
+                <li class="contact__home"><a href="#contact">Contatos</a></li>
+                <li class="projects__home">
                   <a href="#projects">Meus Trabalhos</a>
                 </li>
+                <div class="social__home">
+                  <li class="github__home">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </li>
+                  <li class="linkedin__home">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                </div>
               </ul>
             </nav>
           </div>
@@ -59,114 +78,62 @@
       </section>
       <section id="projects">
         <h2>Meus projetos</h2>
-        <div class="buttons">
-          <button class="prev">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button class="next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-        <div class="container__projects">
-          <ul class="cards__list">
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="icons__redirect">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <img src="https://placehold.co/400" alt="placeholder" />
-              <div class="card__infos">
-                <h2>Project</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptatem aut perferendis non perspiciatis nostrum tenetur
-                  aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
-                  odit qui! Officia est quas possimus.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
+
+        <p>
+          Aqui estão alguns dos meus projetos mais recentes, onde você pode ver
+          minhas habilidades em ação.
+        </p>
+
+        <ul class="cards__list">
+          <li class="card__item">
+            <div class="icons__redirect">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <img src="https://placehold.co/400" alt="placeholder" />
+            <div class="card__infos">
+              <h2>Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                voluptatem aut perferendis non perspiciatis nostrum tenetur
+                aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
+                odit qui! Officia est quas possimus.
+              </p>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="icons__redirect">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <img src="https://placehold.co/400" alt="placeholder" />
+            <div class="card__infos">
+              <h2>Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                voluptatem aut perferendis non perspiciatis nostrum tenetur
+                aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
+                odit qui! Officia est quas possimus.
+              </p>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="icons__redirect">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <img src="https://placehold.co/400" alt="placeholder" />
+            <div class="card__infos">
+              <h2>Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                voluptatem aut perferendis non perspiciatis nostrum tenetur
+                aperiam, ipsa nulla, quos soluta recusandae hic, accusantium
+                odit qui! Officia est quas possimus.
+              </p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="skills">
         <div class="container__skills">
@@ -270,20 +237,17 @@
               </form>
             </div>
           </div>
-
         </div>
       </section>
-      <footer>
-        <div class="container__footer">
-          <p>
-            Desenvolvido por <a href="#">Fabio Coutinho</a> &copy; 2023
-          </p>
-          <div class="social__footer">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-      </footer>    
     </main>
+    <footer>
+      <div class="container__footer">
+        <p>Desenvolvido por <a href="#">Fabio Coutinho</a> &copy; 2025</p>
+        <div class="social__footer">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,12 +1,11 @@
 #projects {
   background-color: var(--bottom);
   padding: 6rem 3rem 1.3rem 3rem;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  gap: 2rem;
 }
 #projects > h2 {
   font-family: "Poppins", sans-serif;
@@ -14,29 +13,24 @@
   color: var(--main-text);
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 6rem;
-}
-
-.container__projects {
-  position: relative;
-  overflow: hidden;
-  max-width: 61.875rem;
 }
 
 .cards__list {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  place-items: center;
+  gap: 1.5rem;
 }
 
 .card__item {
   display: flex;
   flex-direction: column;
-  flex: 0 0 calc(60rem / 3);
+  aspect-ratio: 3/4;
+  align-items: center;
   border-radius: 1.3rem;
   position: relative;
   overflow: hidden;
-  height: 33.125rem;
+  box-shadow: 0.3rem -0.2rem 0.4rem var(--inset-shadow);
 }
 
 .icons__redirect {
@@ -60,14 +54,10 @@
   cursor: pointer;
 }
 
-.card__item:nth-child(1) {
-  margin-left: 0.3rem;
-}
-
 .card__item img {
   border-radius: 1.3rem 1.3rem 0 0;
   object-fit: contain;
-  width: 20rem;
+  width: 100%;
 }
 
 .card__item .card__infos {
@@ -89,8 +79,6 @@
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1.6rem;
   transition: margin-top 0.6s ease;
 }
 
@@ -149,4 +137,24 @@
 .buttons i {
   color: var(--highlight-color);
   font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .cards__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  #projects {
+    padding: 6rem 1.5rem 1.3rem 1.5rem;
+  }
+  .cards__list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #projects > h2 {
+    font-size: 2rem;
+  }
+  .card__infos h2 {
+    font-size: 2.5rem;
+  }
 }
