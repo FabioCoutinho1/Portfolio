@@ -46,12 +46,12 @@ header .desktop__nav h1 a {
   text-decoration: none;
   color: var(--highlight-color);
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 2rem;
 }
 
 header .desktop__nav ul {
   display: flex;
-  gap: 20px;
+  gap: 1.3rem;
 }
 
 header .desktop__nav ul li {
@@ -63,30 +63,46 @@ header .desktop__nav ul li a {
   font-weight: bold;
   text-decoration: none;
   color: var(--main-text);
-  padding: 12px;
-  border-radius: 20px;
+  padding: 0.8rem;
+  border-radius: 1.3rem;
   transition: 0.3s;
 }
 
-.contact__header a {
-  background-color: var(--highlight-color);
-  color: var(--bottom);
+.desktop__nav .contact__header a {
+  position: relative;
+  border: 0.2rem solid var(--highlight-color);
+  color: var(--highlight-color);
   font-weight: bold;
+  transition: all 0.2s;
+}
+.bg__animation {
+  position: absolute;
+  background-color: var(--highlight-color);
+  border-radius: 1rem;
+  transform: scale(0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
 }
 
-.contact__header a:hover {
-  background-color: var(--hovers);
+.desktop__nav .contact__header a:hover {
   color: var(--bottom);
-  box-shadow: 0 0 20px 6px var(--highlight-color);
 }
 
-header .desktop__nav ul li a:hover {
-  background-color: var(--hovers);
+.desktop__nav .contact__header a:hover .bg__animation {
+  transform: scale(1);
+}
+
+header .desktop__nav ul li:not(.contact__header) a:hover {
   color: var(--bottom);
+  background-color: var(--hovers);
 }
 
 header .mobile__nav {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -102,8 +118,8 @@ header .mobile__nav h1 a {
   font-weight: bold;
   font-size: 1.2em;
   border-radius: 0.4rem;
-  width: 3rem; 
-  aspect-ratio: 1 / 1; 
+  width: 3rem;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,13 +133,38 @@ header .mobile__nav h1 a {
 
 .mobile__list {
   position: absolute;
-  top: 80px;
+  top: 5rem;
   left: 0;
   width: 100%;
+  padding: 1.3rem;
   background-color: var(--bottom);
-  box-shadow: 0 0 12px var(--inset-shadow);
+  box-shadow: 0 0 0.8rem var(--inset-shadow);
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1.3rem;
+}
+
+.mobile__list li {
+  list-style: none;
+}
+
+.mobile__list li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--main-text);
+  padding: 0.4rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.mobile__list .contact__header {
+  color: var(--main-text);
+  border-radius: solid 2px var(--highlight-color);
+}
+
+.mobile__list li a:hover {
+  background-color: var(--hovers);
+  color: var(--bottom);
 }
 
 #home,
@@ -136,5 +177,9 @@ header .mobile__nav h1 a {
 @media (max-width: 768px) {
   header .desktop__nav {
     display: none;
+  }
+
+  header .mobile__nav {
+    display: flex;
   }
 }

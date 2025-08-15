@@ -86,7 +86,7 @@
 
 .icons__skills .list__skills .item__skill img {
   border-radius: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .icons__skills .list__skills .item__skill {
@@ -125,16 +125,16 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   #skills {
     padding: 6rem 1.5rem 1.3rem 1.5rem;
   }
 
-  .container__skills h2{
+  .container__skills h2 {
     font-size: 1.5rem;
   }
 
-  .list__more__skills ul h3{
+  .list__more__skills ul h3 {
     font-size: 1.2 rem;
   }
 }
