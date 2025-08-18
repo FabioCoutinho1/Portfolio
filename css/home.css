@@ -51,6 +51,8 @@
 .nav__home ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  height: max-content;
   gap: 1.5rem;
 }
 
@@ -60,23 +62,42 @@
 .nav__home ul li a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  padding: 0.8rem;
   font-size: 1.2rem;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .contact__projects {
   display: flex;
+  border-radius: 0.6rem;
 }
 .contact__home {
   position: relative;
-  z-index: 0;
+  padding: 0.5rem 0;
 }
 
 .contact__home a {
+  position: relative;
+  display: inline-block;
   border: 0.2rem solid var(--highlight-color);
-  padding: 0.4rem 1rem;
-  border-radius: 0.6rem;
   color: var(--highlight-color);
+  font-weight: bold;
+  transition: all 0.2s;
+  border-radius: 1.3rem;
+  z-index: 1;
+}
+
+.contact__home a .bg__animation {
+  width: 7rem;
+  height: 7rem;
+}
+
+.contact__home a:hover {
+  color: var(--bottom);
+}
+.contact__home a:hover .bg__animation {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .projects__home a {
@@ -157,9 +178,11 @@
 
   .nav__home ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
   }
   .nav__home ul li a {
+    display: inline-block;
     font-size: 1rem;
   }
   .nav__home ul li a i {
