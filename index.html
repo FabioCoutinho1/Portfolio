@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,14 +13,22 @@
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/corlors.css" />
+    <link rel="stylesheet" href="css/checkbox-theme.css" />
     <script src="js/scrip.js" defer></script>
     <title>Fabio Coutinho</title>
   </head>
   <body>
     <header>
-      <nav class="desktop__nav">
+      <nav class="desktop__nav dark">
         <h1><a href="#">Fabio Coutinho</a></h1>
         <ul>
+          <li>
+            <label for="switch" class="switch">
+              <input id="switch" type="checkbox" />
+              <span class="slider"></span>
+              <span class="decoration"></span>
+            </label>
+          </li>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#skills">Habilidades</a></li>
