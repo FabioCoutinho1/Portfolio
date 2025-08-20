@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 
-.list__more__skills ul h3 {
+.list__more__skills h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;

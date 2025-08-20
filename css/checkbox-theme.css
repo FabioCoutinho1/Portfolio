@@ -1,6 +1,6 @@
 /* The switch - the box around the slider */
 .switch {
-  font-size: 17px;
+  font-size: 0.8rem;
   position: relative;
   display: inline-block;
   width: 3.5em;
@@ -17,14 +17,13 @@
 
 /* The slider */
 .slider {
-  --background: #20262c;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--background);
+  background-color: var(--highlight-color);
   transition: 0.5s;
   border-radius: 30px;
 }
@@ -42,32 +41,8 @@
   transition: 0.5s;
 }
 
-.decoration {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 2px;
-  border-radius: 50%;
-  right: 20%;
-  top: 15%;
-  background: #e5f041e6;
-  backdrop-filter: blur(10px);
-  transition: all 0.5s;
-  box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
-    -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
-}
-
-input:checked ~ .decoration {
-  transform: translateX(-20px);
-  width: 10px;
-  height: 10px;
-  background: white;
-  box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
-    1px 17px 0 white, 10px 17px 0 white;
-}
-
 input:checked + .slider {
-  background-color: #5494de;
+  background-color: var(--highlight-color);
 }
 
 input:checked + .slider:before {

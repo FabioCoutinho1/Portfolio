@@ -15,6 +15,14 @@
   text-align: center;
 }
 
+#projects > p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--main-text);
+  text-align: center;
+  max-width: 60ch;
+}
+
 .cards__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

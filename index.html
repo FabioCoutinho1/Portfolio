@@ -24,7 +24,7 @@
         <ul>
           <li>
             <label for="switch" class="switch">
-              <input id="switch" type="checkbox" />
+              <input id="switch" class="switch__input" type="checkbox" />
               <span class="slider"></span>
               <span class="decoration"></span>
             </label>
@@ -43,9 +43,14 @@
 
       <nav class="mobile__nav">
         <h1><a href="#">F</a></h1>
-        <div class="mobile__menu">
+        <label for="switch__mobile" class="switch">
+          <input id="switch__mobile" class="switch__input" type="checkbox" />
+          <span class="slider"></span>
+          <span class="decoration"></span>
+        </label>
+        <button class="mobile__menu">
           <i class="fa-solid fa-bars" id="btn-menu"></i>
-        </div>
+        </button>
         <ul class="mobile__list">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#projects">Projetos</a></li>
@@ -67,7 +72,7 @@
               Criando interfaces bonitas e interatividades impressionantes 🚀
             </p>
 
-            <nav class="nav__home">
+            <div class="nav__home">
               <ul>
                 <li class="contact__home">
                   <a href="#contact"
@@ -93,7 +98,7 @@
                   </li>
                 </div>
               </ul>
-            </nav>
+            </div>
           </div>
           <div class="provision">
             <div class="art"></div>
@@ -164,8 +169,8 @@
           <div class="more__skills">
             <h2>Outros conhecimentos</h2>
             <div class="list__more__skills">
+              <h3>Frontend</h3>
               <ul>
-                <h3>Frontend</h3>
                 <li>ES6+</li>
                 <li>DOM Manipulation</li>
                 <li>Fetch API / Promises / async/await</li>
@@ -173,13 +178,13 @@
                 <li>Form validation</li>
                 <li>CSS Flexbox / Grid</li>
               </ul>
+              <h3>Ferramentas de Worflow</h3>
               <ul>
-                <h3>Ferramentas de Worflow</h3>
                 <li>Figma</li>
                 <li>DevTools do navegador</li>
               </ul>
+              <h3>Build e organização</h3>
               <ul>
-                <h3>Build e organização</h3>
                 <li>Modularização de componentes</li>
                 <li>Hooks personalizados no React</li>
                 <li>Componentização e organização de pastas</li>
@@ -231,14 +236,25 @@
             <div class="social__contact">
               <div class="container__social">
                 <h3>Conecte-se</h3>
-                <div class="github">
+                <a
+                  class="github"
+                  href="https://github.com/FabioCoutinho1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa-brands fa-github"></i>
                   <h2>GitHub</h2>
-                </div>
-                <div class="linkedin">
+                </a>
+
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/fabio-coutinho-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa-brands fa-linkedin"></i>
                   <h2>Linkedin</h2>
-                </div>
+                </a>
               </div>
             </div>
 

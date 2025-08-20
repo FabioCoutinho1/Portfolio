@@ -146,6 +146,8 @@ header .mobile__nav h1 a {
   font-size: 2rem;
   cursor: pointer;
   color: var(--highlight-color);
+  border: 0;
+  background-color: transparent;
 }
 
 .mobile__list {

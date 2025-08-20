@@ -45,6 +45,10 @@
   gap: 3rem;
 }
 
+.social__contact a {
+  text-decoration: none;
+}
+
 .social__contact h3 {
   color: var(--main-text);
   font-size: 2rem;
