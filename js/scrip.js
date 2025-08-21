@@ -19,7 +19,7 @@ switchTheme.forEach((el) => {
   });
 });
 menuBtn.addEventListener("click", () => {
-  const isOpen = mobileMenu.classList.toggle("show");
+  const isOpen = mobileMenu.classList.toggle("show__list");
   menuBtn.classList.toggle("fa-bars", !isOpen);
   menuBtn.classList.toggle("fa-xmark", isOpen);
 });

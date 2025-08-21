@@ -166,7 +166,7 @@ header .mobile__nav h1 a {
   transition: all 0.3s ease-in-out;
 }
 
-.show {
+.show__list {
   transform: scaleY(1);
 }
 
