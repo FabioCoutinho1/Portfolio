@@ -17,6 +17,7 @@
 
     <script src="js/scrip.js" defer></script>
     <script src="js/animation.js" defer></script>
+    <script src="js/fetch-email.js" defer></script>
     <title>Fabio Coutinho</title>
   </head>
   <body>
@@ -265,8 +266,18 @@
 
               <form id="call-me">
                 <div class="email__name">
-                  <input type="text" placeholder="Nome" />
-                  <input type="text" placeholder="E-mail" />
+                  <input
+                    type="text"
+                    name="name__contact"
+                    id="name__contact"
+                    placeholder="Nome"
+                  />
+                  <input
+                    type="email"
+                    name="email__contact"
+                    id="email__contact"
+                    placeholder="E-mail"
+                  />
                 </div>
 
                 <textarea
