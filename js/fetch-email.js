@@ -17,7 +17,7 @@ form.addEventListener("submit", async (event) => {
 
   try {
     const response = await fetch(
-      "https://sendemailformyportfolio.onrender.com/",
+      "https://sendemailformyportfolio.onrender.com/api/send-email",
       {
         method: "POST",
         headers: {
