@@ -16,13 +16,16 @@ form.addEventListener("submit", async (event) => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
+    const response = await fetch(
+      "https://sendemailformyportfolio.onrender.com/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      }
+    );
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
