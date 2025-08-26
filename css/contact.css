@@ -131,6 +131,18 @@
   width: 100%;
 }
 
+.contacts__box .send__message .input__error input {
+  border: 2px solid red;
+}
+
+.contacts__box .send__message .input__error input:focus {
+  border: 2px solid darkred;
+  outline: 3px solid red;
+}
+
+.contacts__box .send__message .input__error input::placeholder {
+  color: red;
+}
 #call-me {
   display: flex;
   gap: 3rem;
@@ -148,6 +160,17 @@ textarea {
   border: none;
   max-height: 25rem;
   font-family: "Roboto", sans-serif;
+}
+
+.textarea__trim {
+  border: 2px solid red;
+}
+.textarea__trim::placeholder {
+  color: red;
+}
+.textarea__trim:focus {
+  border: 2px solid darkred;
+  outline: 3px solid red;
 }
 
 #call-me button {
@@ -213,6 +236,18 @@ footer a i {
 .social__footer {
   display: flex;
   gap: 1rem;
+}
+
+.trim__error {
+  background-color: rgb(255, 179, 179);
+  color: rgb(102, 0, 0);
+  border: 2px solid var(--error-border);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

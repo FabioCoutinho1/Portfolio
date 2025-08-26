@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/corlors.css" />
     <link rel="stylesheet" href="css/checkbox-theme.css" />
+    <link rel="stylesheet" href="css/message.css" />
 
     <script src="js/scrip.js" defer></script>
     <script src="js/animation.js" defer></script>
@@ -64,6 +65,13 @@
     </header>
 
     <main>
+      <div class="container__message">
+        <div class="success__message">
+          <h2>Mensagem enviada com sucesso!</h2>
+          <span class="progress__bar"></span>
+        </div>
+      </div>
+
       <section id="home">
         <div class="container__home">
           <div class="container__left observer__animation">
@@ -135,9 +143,10 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
+              </div>
             </div>
           </li>
-                    <li class="card__item observer__animation">
+          <li class="card__item observer__animation">
             <div class="icons__redirect">
               <i class="fa-brands fa-github"></i>
               <i class="fa-solid fa-arrow-right"></i>
@@ -155,9 +164,10 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
+              </div>
             </div>
           </li>
-                    <li class="card__item observer__animation">
+          <li class="card__item observer__animation">
             <div class="icons__redirect">
               <i class="fa-brands fa-github"></i>
               <i class="fa-solid fa-arrow-right"></i>
@@ -175,6 +185,7 @@
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -275,9 +286,11 @@
 
             <div class="send__message observer__animation">
               <h2>Envia-me um mensagem</h2>
-
+              <div class="trim__error">
+                <p>Por favor, preencha todos os campos.</p>
+              </div>
               <form id="call-me">
-                <div class="email__name">
+                <div class="email__name input__error">
                   <input
                     type="text"
                     name="name__contact"
@@ -293,6 +306,7 @@
                 </div>
 
                 <textarea
+                  class="textarea__trim"
                   name="message__area"
                   id="message__area"
                   placeholder="Escreva sua Mensagem"

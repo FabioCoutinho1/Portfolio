@@ -2,6 +2,8 @@ const form = document.querySelector("form");
 const nameInput = document.querySelector("#name__contact");
 const emailInput = document.querySelector("#email__contact");
 const messageInput = document.querySelector("#message__area");
+const successMessage = document.querySelector(".success__message");
+const progressBar = document.querySelector(".progress__bar");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -30,8 +32,11 @@ form.addEventListener("submit", async (event) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-
-    alert("Email sent successfully!");
+    successMessage.style.opacity = "1";
+    progressBar.style.animation = "slide 3s linear infinite";
+    setTimeout(() => {
+      successMessage.style.opacity = "0";
+    }, 3000);
     form.reset();
   } catch (error) {
     console.error("Error sending email:", error);
