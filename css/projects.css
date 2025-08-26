@@ -24,6 +24,7 @@
 }
 
 .cards__list {
+  max-width: 1280px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   place-items: center;
@@ -33,11 +34,8 @@
 .card__item {
   display: flex;
   flex-direction: column;
-  aspect-ratio: 3/4;
   align-items: center;
   border-radius: 1.3rem;
-  position: relative;
-  overflow: hidden;
   box-shadow: 0.3rem -0.2rem 0.4rem var(--inset-shadow);
 }
 
@@ -49,12 +47,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 0.6rem;
-  opacity: 0;
   transition: opacity 0.3s ease;
-}
-
-.card__item:hover .icons__redirect {
-  opacity: 1;
 }
 
 .icons__redirect i {
@@ -70,81 +63,45 @@
 
 .card__item .card__infos {
   background-color: var(--highlight-color);
-  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.8rem;
   padding: 0.6rem;
-  height: 80%;
   bottom: 0;
-  transition: transform 0.5s ease, border-radius 0.5s ease;
-  transform: translateY(13.125rem);
+  border-radius: 0 0 1.3rem 1.3rem;
 }
 
 .card__infos h2 {
   font-family: "Poppins", sans-serif;
-  color: var(--bottom);
+  color: var(--main-text);
   font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2.2rem;
   transition: margin-top 0.6s ease;
 }
 
 .card__infos p {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  color: var(--bottom);
-
-  opacity: 0;
-  font-size: 1rem;
-  line-height: 1.3rem;
+  color: var(--main-text);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   transition: opacity 0.3s ease;
 }
-.card__item:hover .card__infos {
-  transform: translateY(0rem);
-  border-radius: 1.3rem 1.3rem 0 0;
-}
 
-.card__item:hover h2 {
-  margin-top: 1.3rem;
-}
-
-.card__item:hover p {
-  opacity: 1;
-}
-
-.buttons {
-  background-color: transparent;
+.card__infos .technologies__used {
   display: flex;
-  justify-content: space-between;
-  max-width: 80rem;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
-.buttons button {
-  background-color: transparent;
-  border: none;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50%;
-  transition: 0.5s;
-  pointer-events: all;
-}
-
-.buttons button:hover {
-  transform: scale(1.5);
-}
-
-.buttons button:active {
-  background-color: #7070703a;
-}
-
-.buttons i {
-  color: var(--highlight-color);
-  font-size: 3rem;
+.technologies__used span {
+  background-color: var(--bottom);
+  color: var(--main-text);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1024px) {
@@ -163,6 +120,6 @@
     font-size: 2rem;
   }
   .card__infos h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 }

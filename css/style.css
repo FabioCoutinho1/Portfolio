@@ -21,7 +21,7 @@
   --main-text: #d1d5db; /* Texto cinza claro */
   --highlight-color: #6366f1; /* Azul destaque mantém contraste */
   --hovers: #818cf8; /* Hover mais claro */
-  --inset-shadow: #00000066; /* Sombra leve */
+  --inset-shadow: #bbbbbb87; /* Sombra leve */
 }
 header {
   width: 100%;
