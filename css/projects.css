@@ -73,7 +73,7 @@
 
 .card__infos h2 {
   font-family: "Poppins", sans-serif;
-  color: var(--main-text);
+  color: var(  --text-color-projects);
   font-weight: 700;
   font-size: 2.2rem;
   transition: margin-top 0.6s ease;
@@ -82,7 +82,7 @@
 .card__infos p {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  color: var(--main-text);
+  color: var(  --text-color-projects);
   font-size: 1.1rem;
   line-height: 1.5rem;
   transition: opacity 0.3s ease;

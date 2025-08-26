@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -14,14 +17,16 @@
   --highlight-color: #4f46e5;
   --hovers: #6366f1;
   --inset-shadow: #0000003e;
+  --text-color-projects: #f4f4f4;
 }
 
 :root[data-theme="dark"] {
-  --bottom: #1e1e2e; /* Fundo com leve tom arroxeado */
-  --main-text: #d1d5db; /* Texto cinza claro */
-  --highlight-color: #6366f1; /* Azul destaque mantém contraste */
-  --hovers: #818cf8; /* Hover mais claro */
-  --inset-shadow: #bbbbbb87; /* Sombra leve */
+  --bottom: #1e1e2e;
+  --main-text: #d1d5db;
+  --highlight-color: #6366f1;
+  --hovers: #818cf8;
+  --inset-shadow: #bbbbbb87;
+  --text-color-projects: #dce0e7;
 }
 header {
   width: 100%;
