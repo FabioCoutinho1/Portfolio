@@ -25,7 +25,8 @@
 }
 
 .success__message .progress__bar {
-  width: 0;
+  width: 0%;
+  transition: width 1ms ;
   background-color: rgb(73, 167, 44);
   height: 5px;
   position: absolute;
