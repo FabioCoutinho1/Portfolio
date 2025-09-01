@@ -192,7 +192,6 @@ header .mobile__nav h1 a {
 }
 .mobile__list .contact__header {
   color: var(--main-text);
-  border-radius: solid 2px var(--highlight-color);
 }
 
 .mobile__list li a:hover {
