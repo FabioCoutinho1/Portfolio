@@ -36,6 +36,8 @@
   align-items: center;
   border-radius: 1.3rem;
   box-shadow: 0.3rem -0.2rem 0.4rem var(--inset-shadow);
+  height: 100%; /* Garante mesma altura */
+  width: 100%; /* Garante mesma largura */
 }
 
 .icons__redirect {
@@ -60,14 +62,15 @@
   width: 100%;
 }
 
-.card__item .card__infos {
+.card__infos {
   background-color: var(--highlight-color);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   padding: 0.6rem;
-  bottom: 0;
   border-radius: 0 0 1.3rem 1.3rem;
+  width: 100%; /* Ocupa toda largura disponível */
+  flex: 1; /* Faz o card info crescer para preencher espaço */
 }
 
 .card__infos h2 {
