@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projects = [
     {
-      name: "To-Do List",
+      name: "GitHub-Finder",
       description:
-        "Aplicativo para gerenciar tarefas com salvamento no localStorage.",
-      image: "https://placehold.co/400x300",
-      github: "https://github.com/FabioCoutinho1/todo-list",
-      demo: "#",
-      technologies: ["HTML", "CSS", "JavaScript"],
+        "GitHub Finder: App React/TS para buscar usuários do GitHub. Foco na Fetch API e Tipagem Forte para um código limpo e seguro.",
+      image: "img/GitHubFinder.png",
+      github: "https://github.com/FabioCoutinho1/GitHubFinder",
+      demo: "https://git-hub-finder-wheat.vercel.app/",
+      technologies: ["React", "CSS", "TypeScript"],
     },
     {
       name: "To-Do List",
