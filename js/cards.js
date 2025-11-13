@@ -11,30 +11,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     {
       name: "GitHub-Finder",
-      description:
-        "GitHub Finder: App React/TS para buscar usuários do GitHub. Foco na Fetch API e Tipagem Forte para um código limpo e seguro.",
+      description: `GitHub Finder: App React/TS para buscar usuários do GitHub.
+       Foco na Fetch API e Tipagem Forte para um código limpo e seguro.`,
       image: "img/GitHubFinder.png",
       github: "https://github.com/FabioCoutinho1/GitHubFinder",
       demo: "https://git-hub-finder-wheat.vercel.app/",
       technologies: ["React", "CSS", "TypeScript"],
     },
     {
-      name: "To-Do List",
-      description:
-        "Aplicativo para gerenciar tarefas com salvamento no localStorage.",
-      image: "https://placehold.co/400x300",
-      github: "https://github.com/FabioCoutinho1/todo-list",
-      demo: "#",
-      technologies: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      name: "To-Do List",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum unde ducimus amet perferendis rem corporis impedit qui quia ex quaerat. Accusantium facilis modi quisquam nobis aspernatur labore et laborum quae?",
-      image: "https://placehold.co/400x300",
-      github: "https://github.com/FabioCoutinho1/todo-list",
-      demo: "#",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      name: "FluxoRegistro",
+      description: `Sistema desenvolvido para uma cliente com o objetivo de otimizar
+       o acompanhamento dos registros de marcas realizados em seu trabalho. A aplicação
+        permite gerenciar e visualizar o status de cada registro de forma simples e eficiente,
+         facilitando a organização e o controle das etapas do processo.`,
+      image: "img/FluxoRegistro.png",
+      github: "https://github.com/FabioCoutinho1/Registro",
+      demo: "https://fluxoregistro.vercel.app/",
+      technologies: ["React", "Tailwindcss", "TypeScript"],
     },
   ];
 
